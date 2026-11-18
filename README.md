@@ -10,8 +10,11 @@ al seleccionarlas para mostrar su descripción.
   esta se ensancha y aparece el texto asociado.
 - Solo puede haber una tarjeta activa a la vez: al seleccionar otra, la anterior
   vuelve a su tamaño inicial.
-- En pantallas de hasta 768 px de ancho, las tarjetas se colocan en columna. La
-  tarjeta seleccionada crece en altura en lugar de anchura.
+- En pantallas de hasta 768 px de ancho, las tarjetas se colocan en columna y la
+  galería se ajusta a la altura visible del móvil (`100dvh`). Las tarjetas no
+  seleccionadas quedan como pestañas de 50 px y la seleccionada ocupa el espacio
+  restante, por lo que puede ampliarse sin imponer una altura fija de 600 px ni
+  sobrepasar los límites de la pantalla.
 - Algunas imágenes se cargan de forma diferida (`loading="lazy"`) para evitar
   cargar todas antes de que sean necesarias.
 
